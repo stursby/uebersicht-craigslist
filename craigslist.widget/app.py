@@ -67,13 +67,7 @@ for node in dom.getElementsByTagName('item')[0:5]:
         image = 'http://www.craigslist.org/images/peace.jpg'
 
     date_node = node.getElementsByTagName('dc:date')[0].firstChild.data
-
-    # 2014-09-15T15:52:38-07:00
-
-    # t = time.mktime(time.strptime(date_node, "%Y-%m-%dT%H:%M:%S-%h:%M"));
-
     t = datetime.strptime(date_node, "%Y-%m-%dT%H:%M:%S-%I:00")
-
 
     items.append({
         'title': node.getElementsByTagName('title')[0].firstChild.data,
