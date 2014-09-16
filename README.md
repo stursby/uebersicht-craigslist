@@ -10,3 +10,8 @@ Getting started
 2. 2 Copy the full URL `http://minneapolis.craigslist.org/search/sss?query=xbox%20one&sort=rel` 
 3. Paste the URL into `craigslist.coffee` file in the `url` variable.
 4. Save the `craigslist.coffee` file, and you should see your results!
+
+Notes
+-----
+- You’ll most likely want to change the command to `command: "python ./craigslist.widget/app.py #{url}"`
+- To open a Craigslist post, ⌘ + click will open in your default browser.
